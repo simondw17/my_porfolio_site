@@ -1,46 +1,59 @@
 body {
-    background-color: antiquewhite;
+    background-color: rgb(248, 246, 244);
     font-size: 16px;
     color: black;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
 }
 
+/* Header and nav */
 header {
-    position: fixed;
     display: flex;
     align-items: center;
-    /* justify-content: flex-start; */
+    justify-content: center;
     height: auto;
     width: 100%;
-    padding-bottom: 20px;
+    padding: 0 4rem;
+    z-index: 2;
 }
 
 nav {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-around;
-    margin: 0 5%;
+    margin: 0 25%;
 }
 
 nav li {
     display: inline-block;
-    padding: 10px 10px;
+    padding-left: 1.5rem;
     cursor: pointer;
-    color: blue;
+    align-items: flex-end;
 }
-
+nav a {
+    vertical-align: bottom;
+    text-decoration: none;
+    color: black;
+}
 nav a:hover {
     color: darkblue;
 }
 
+/* main / body */
+section {
+    padding: 1rem 0;
+}
 .about-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 400px;
+    padding: 0 4rem;
+    margin: 0 2.5rem;
 }
 
-.about-container h2{
-    display: flex;
+.about-text {
+    margin-right: 1rem;
 }
 
 .about-container p{
@@ -48,8 +61,7 @@ nav a:hover {
 }
 
 .my-photo {
-    display: flex;
-    height: 300px;
-    width: 275px;
+    width: 300px;
+    flex-shrink: 0;
 
 }
