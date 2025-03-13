@@ -1,0 +1,55 @@
+body {
+    background-color: antiquewhite;
+    font-size: 16px;
+    color: black;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    height: auto;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 0 5%;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: blue;
+}
+
+nav a:hover {
+    color: darkblue;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 400px;
+}
+
+.about-container h2{
+    display: flex;
+}
+
+.about-container p{
+    display: flex;
+}
+
+.my-photo {
+    display: flex;
+    height: 300px;
+    width: 275px;
+
+}
